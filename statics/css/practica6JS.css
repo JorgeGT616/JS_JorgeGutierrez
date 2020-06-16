@@ -1,0 +1,16 @@
+#contenedorGen
+{
+  background-color: #CFCFCF;
+  border: 4px dashed #000000;
+  color: #FF0000;
+  line-height: 3px;
+}
+.txtazul
+{
+  color: rgb(50,30,190);
+  text-decoration: underline;
+}
+.txtnegro
+{
+  color: #000000;
+}
