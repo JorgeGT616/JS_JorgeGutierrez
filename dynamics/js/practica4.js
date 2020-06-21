@@ -1,4 +1,4 @@
-/*//Numero a evaluar
+//Numero a evaluar
 let numEva = null;
 //While que se asegura que el número introducido sea 1
 while((numEva == null)||(numEva<=1))
@@ -53,7 +53,4 @@ while(numBaj > 1)
 }
 //Se imprimen los numeros
 console.log("Número seleccionado = " + numEva);
-console.log(divPrimos.sort());*/
-
-var secuencia = [1,2,3,4,5,6,7]
-console.log("[" + secuencia.shift() + "] [" + secuencia + "]");
+console.log(divPrimos.sort());

@@ -1,11 +1,12 @@
 var aumento = 9;
 var inicial = Math.round(Math.random()*aumento+1);
 let ganadorJue = false;
+let fallo = false;
 function simonIni(){
   alert(inicial)
 }
 function simonCont(){
-  if(ganadorJue == false)
+  if((ganadorJue == false)&&(fallo == false))
   {
     numeroAnt = inicial;
     aumento = aumento * 5;
@@ -17,15 +18,24 @@ function simonCont(){
     }
   }
 }
-function perdiste(){
-  aumento = 9;
-  inicial = 0;
-  alert("Simón está triste, te has equivocado :(");
-  window.location.reload();
+function perdiste()
+{
+  if((fallo == false)&&(ganadorJue == false))
+  {
+    aumento = 9;
+    inicial = 0;
+    fallo = true;
+    alert("Simón está triste, te has equivocado :(");
+    window.location.reload();
+  }
 }
-function ganador(){
-  ganadorJue = true;
-  alert("Felicidades, Simón está contento :)");
+function ganador()
+{
+  if((fallo == false)&&(ganadorJue == false))
+  {
+    ganadorJue = true;
+    alert("Felicidades, Simón está contento :)");
+  }
 }
 
 function juegoInterno(){
